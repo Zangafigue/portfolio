@@ -2,6 +2,8 @@ import Scene from './components/3d/Scene'
 import Landing from './components/sections/Landing'
 import About from './components/sections/About'
 import Skills from './components/sections/Skills'
+import Projects from './components/sections/Projects'
+import Certifications from './components/sections/Certifications'
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
         <Landing />
         <About />
         <Skills />
+        <Projects />
+        <Certifications />
       </div>
     </div>
   )
