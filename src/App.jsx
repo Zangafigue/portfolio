@@ -5,11 +5,13 @@ import Skills from './components/sections/Skills'
 import Projects from './components/sections/Projects'
 import Certifications from './components/sections/Certifications'
 import Contact from './components/sections/Contact'
+import Navbar from './components/layout/Navbar'
 
 function App() {
   return (
     <div style={{ position: 'relative' }}>
       <Scene />
+      <Navbar />
       <div style={{ position: 'relative', zIndex: 1 }}>
         <Landing />
         <About />

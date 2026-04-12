@@ -4,6 +4,7 @@ import ScrollIndicator from '../ui/ScrollIndicator'
 function Landing() {
   return (
     <section
+      id="home"
       style={{
         minHeight: '100vh',
         display: 'flex',
