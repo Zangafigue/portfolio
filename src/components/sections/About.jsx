@@ -1,7 +1,14 @@
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import about from '../../data/about'
+import { useLoc } from '../../i18n/localize'
 
 function About() {
+  const { t } = useTranslation()
+  const loc = useLoc()
+
+  const bio = loc(about.bio)
+
   return (
     <section
       id="about"
@@ -33,14 +40,14 @@ function About() {
             color: '#00B4D8',
             fontSize: '0.9rem',
           }}>
-            01.
+            {t('about.n')}
           </span>
           <h2 style={{
             fontSize: 'clamp(1.5rem, 3vw, 2.2rem)',
             fontWeight: 700,
             color: '#ffffff',
           }}>
-            About Me
+            {t('about.title')}
           </h2>
           <div style={{
             flex: 1,
@@ -60,7 +67,7 @@ function About() {
 
           {/* Colonne gauche — Bio */}
           <div>
-            {about.bio.map((paragraph, index) => (
+            {bio.map((paragraph, index) => (
               <motion.p
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
@@ -93,24 +100,27 @@ function About() {
                 marginBottom: '0.8rem',
                 letterSpacing: '0.1em',
               }}>
-                LANGUAGES
+                {t('about.languages')}
               </p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
-                {about.languages.map((lang) => (
-                  <span
-                    key={lang.name}
-                    style={{
-                      padding: '4px 12px',
-                      border: '1px solid rgba(0, 180, 216, 0.3)',
-                      borderRadius: '999px',
-                      fontSize: '0.8rem',
-                      color: 'rgba(255,255,255,0.7)',
-                      fontFamily: 'JetBrains Mono, monospace',
-                    }}
-                  >
-                    {lang.name} — {lang.level}
-                  </span>
-                ))}
+                {about.languages.map((lang) => {
+                  const name = loc(lang.name)
+                  return (
+                    <span
+                      key={name}
+                      style={{
+                        padding: '4px 12px',
+                        border: '1px solid rgba(0, 180, 216, 0.3)',
+                        borderRadius: '999px',
+                        fontSize: '0.8rem',
+                        color: 'rgba(255,255,255,0.7)',
+                        fontFamily: 'JetBrains Mono, monospace',
+                      }}
+                    >
+                      {name} — {loc(lang.level)}
+                    </span>
+                  )
+                })}
               </div>
             </motion.div>
           </div>
@@ -135,9 +145,9 @@ function About() {
               }}
             >
               {[
-                { label: 'School', value: about.school },
-                { label: 'Location', value: about.location },
-                { label: 'Year', value: about.year },
+                { label: t('about.school'), value: about.school },
+                { label: t('about.location'), value: about.location },
+                { label: t('about.year'), value: loc(about.year) },
               ].map((item) => (
                 <div
                   key={item.label}
@@ -148,7 +158,7 @@ function About() {
                     alignItems: 'flex-start',
                   }}
                 >
-                  <span style={{ color: '#00B4D8', minWidth: '80px' }}>
+                  <span style={{ color: '#00B4D8', minWidth: '90px' }}>
                     {item.label}
                   </span>
                   <span style={{ color: 'rgba(255,255,255,0.7)' }}>
@@ -164,38 +174,41 @@ function About() {
               gridTemplateColumns: '1fr 1fr',
               gap: '1rem',
             }}>
-              {about.facts.map((fact, index) => (
-                <motion.div
-                  key={fact.label}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                  style={{
-                    backgroundColor: 'rgba(0, 180, 216, 0.05)',
-                    border: '1px solid rgba(0, 180, 216, 0.2)',
-                    borderRadius: '10px',
-                    padding: '1.2rem',
-                    textAlign: 'center',
-                  }}
-                >
-                  <div style={{
-                    fontSize: '1.8rem',
-                    fontWeight: 700,
-                    color: '#00B4D8',
-                    fontFamily: 'JetBrains Mono, monospace',
-                  }}>
-                    {fact.value}
-                  </div>
-                  <div style={{
-                    fontSize: '0.75rem',
-                    color: 'rgba(255,255,255,0.5)',
-                    marginTop: '4px',
-                  }}>
-                    {fact.label}
-                  </div>
-                </motion.div>
-              ))}
+              {about.facts.map((fact, index) => {
+                const label = loc(fact.label)
+                return (
+                  <motion.div
+                    key={label}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
+                    style={{
+                      backgroundColor: 'rgba(0, 180, 216, 0.05)',
+                      border: '1px solid rgba(0, 180, 216, 0.2)',
+                      borderRadius: '10px',
+                      padding: '1.2rem',
+                      textAlign: 'center',
+                    }}
+                  >
+                    <div style={{
+                      fontSize: '1.8rem',
+                      fontWeight: 700,
+                      color: '#00B4D8',
+                      fontFamily: 'JetBrains Mono, monospace',
+                    }}>
+                      {fact.value}
+                    </div>
+                    <div style={{
+                      fontSize: '0.75rem',
+                      color: 'rgba(255,255,255,0.5)',
+                      marginTop: '4px',
+                    }}>
+                      {label}
+                    </div>
+                  </motion.div>
+                )
+              })}
             </div>
 
           </div>

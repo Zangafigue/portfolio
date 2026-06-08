@@ -1,0 +1,83 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "certifications": "Certifications",
+    "contact": "Contact"
+  },
+  "landing": {
+    "badge": "Ouvert aux stages",
+    "role": "Développeur Full-Stack & Mobile",
+    "positioning": "Je transforme des idées en produits livrés — web, mobile, backend et IA.",
+    "stack": "React · Flutter · Node.js · Python · IA",
+    "tagline": "« J'apprends en construisant. Je livre, puis j'améliore. »",
+    "viewProjects": "Voir mes projets",
+    "contact": "Me contacter",
+    "downloadCv": "Télécharger mon CV"
+  },
+  "about": {
+    "n": "01.",
+    "title": "À propos",
+    "languages": "LANGUES",
+    "school": "École",
+    "location": "Localisation",
+    "year": "Année"
+  },
+  "skills": {
+    "n": "02.",
+    "title": "Compétences & Stack technique"
+  },
+  "projects": {
+    "n": "03.",
+    "title": "Projets",
+    "featured": "EN VEDETTE",
+    "featuredTitle": "Projets phares",
+    "allTitle": "Autres projets",
+    "caseStudy": "Étude de cas",
+    "role": "Rôle",
+    "outcome": "Résultat",
+    "code": "Code",
+    "demo": "Démo",
+    "categories": {
+      "All": "Tous",
+      "Web": "Web",
+      "Mobile": "Mobile",
+      "Backend": "Backend",
+      "AI": "IA / Automatisation",
+      "Other": "Autres"
+    }
+  },
+  "certifications": {
+    "n": "04.",
+    "title": "Certifications & Parcours",
+    "tabCertifications": "Certifications",
+    "tabTimeline": "Parcours",
+    "viewCredential": "Voir le certificat →",
+    "now": "ACTUEL"
+  },
+  "contact": {
+    "n": "05.",
+    "title": "Me contacter",
+    "intro": "Je recherche actuellement un stage. Que vous ayez une question, une idée de projet, ou simplement envie de dire bonjour — ma boîte mail est toujours ouverte.",
+    "name": "Nom",
+    "email": "Email",
+    "message": "Message",
+    "namePlaceholder": "Votre nom",
+    "emailPlaceholder": "votre@email.com",
+    "messagePlaceholder": "Votre message...",
+    "send": "Envoyer le message",
+    "sending": "Envoi...",
+    "success": "Message envoyé avec succès !",
+    "error": "Une erreur est survenue. Veuillez réessayer.",
+    "linkGithub": "GitHub",
+    "linkTwitter": "X (Twitter)",
+    "linkEmail": "Email"
+  },
+  "scrollIndicator": "DÉFILEZ POUR EXPLORER",
+  "footer": {
+    "note": "Réalisé avec React, Vite & Framer Motion",
+    "backToTop": "Haut de page ↑"
+  }
+}

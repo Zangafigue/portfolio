@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 
 function ScrollIndicator() {
+  const { t } = useTranslation()
   return (
     <motion.div
       animate={{ y: [0, 10, 0] }}
@@ -18,7 +20,7 @@ function ScrollIndicator() {
         letterSpacing: '0.1em',
       }}
     >
-      <span>SCROLL TO EXPLORE</span>
+      <span>{t('scrollIndicator')}</span>
       <svg
         width="16"
         height="24"

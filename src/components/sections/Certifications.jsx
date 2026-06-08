@@ -1,13 +1,18 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import certifications from '../../data/certifications'
 import CertifCard from '../ui/CertifCard'
 import TimelineView from '../ui/TimelineView'
 
-const tabs = ["Certifications", "Timeline"]
+const tabs = [
+  { id: 'certifications', labelKey: 'certifications.tabCertifications' },
+  { id: 'timeline',       labelKey: 'certifications.tabTimeline' },
+]
 
 function Certifications() {
-  const [activeTab, setActiveTab] = useState('Certifications')
+  const { t } = useTranslation()
+  const [activeTab, setActiveTab] = useState('certifications')
 
   return (
     <section
@@ -40,14 +45,14 @@ function Certifications() {
             color: '#00B4D8',
             fontSize: '0.9rem',
           }}>
-            04.
+            {t('certifications.n')}
           </span>
           <h2 style={{
             fontSize: 'clamp(1.5rem, 3vw, 2.2rem)',
             fontWeight: 700,
             color: '#ffffff',
           }}>
-            Certifications & Journey
+            {t('certifications.title')}
           </h2>
           <div style={{
             flex: 1,
@@ -74,16 +79,16 @@ function Certifications() {
         >
           {tabs.map((tab) => (
             <button
-              key={tab}
-              onClick={() => setActiveTab(tab)}
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
               style={{
                 padding: '8px 20px',
                 borderRadius: '8px',
                 border: 'none',
-                backgroundColor: activeTab === tab
+                backgroundColor: activeTab === tab.id
                   ? 'rgba(0, 180, 216, 0.2)'
                   : 'transparent',
-                color: activeTab === tab
+                color: activeTab === tab.id
                   ? '#00B4D8'
                   : 'rgba(255,255,255,0.4)',
                 fontSize: '0.85rem',
@@ -92,7 +97,7 @@ function Certifications() {
                 transition: 'all 0.2s',
               }}
             >
-              {tab}
+              {t(tab.labelKey)}
             </button>
           ))}
         </motion.div>
@@ -106,7 +111,7 @@ function Certifications() {
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.3 }}
           >
-            {activeTab === 'Certifications' ? (
+            {activeTab === 'certifications' ? (
               <div style={{
                 display: 'grid',
                 gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',

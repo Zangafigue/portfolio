@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import { useFrame } from '@react-three/fiber'
 import { Stars as DreiStars } from '@react-three/drei'
 
-function Stars() {
+function Stars({ mobile = false }) {
   const starsRef = useRef()
 
   // useFrame = s'exécute à chaque frame (60fps)
@@ -17,9 +17,9 @@ function Stars() {
   return (
     <group ref={starsRef}>
       <DreiStars
-        radius={100}      // rayon de la sphère d'étoiles
-        depth={50}        // profondeur du champ d'étoiles
-        count={6000}      // nombre d'étoiles
+        radius={100}              // rayon de la sphère d'étoiles
+        depth={50}                // profondeur du champ d'étoiles
+        count={mobile ? 2500 : 6000} // moins d'étoiles sur mobile (perf)
         factor={4}        // taille des étoiles
         saturation={0}    // 0 = blanc pur
         fade              // fondu sur les bords
