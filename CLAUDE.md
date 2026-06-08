@@ -66,4 +66,4 @@ A plain, scrollable single page — **no 3D, no canvas** in the live app.
 
 ## Deployment
 
-`vercel.json` pins the Vite framework / build command / `dist` output. URL-root static assets live in `public/`: `cv-zangafigue.pdf` (hero CV button), `hero.png` (OG/Twitter share image), and `projects/<slug>.png` (project screenshots).
+`vercel.json` pins the Vite framework / build command / `dist` output. URL-root static assets live in `public/`: the two language CVs `CV_Zangafigué_Mathias_TRAORE.pdf` (FR) and `Resume_Zangafigué_Mathias_TRAORE.pdf` (EN) — the hero CV button picks one per language via `landing.cvFile` in `i18n/*.json` (path is percent-encoded for the accent); `hero.png` (OG/Twitter share image); `me.jpg` (About portrait, hidden if absent); and `projects/<slug>.jpg` (project screenshots, slug from `data/projects.js`).

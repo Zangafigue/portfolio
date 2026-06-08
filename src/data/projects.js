@@ -1,5 +1,5 @@
 // Champs bilingues : { en, fr }. Voir src/i18n/localize.js (useLoc()).
-// slug → capture attendue dans public/projects/<slug>.png (fallback élégant sinon).
+// slug → capture attendue dans public/projects/<slug>.jpg (fallback élégant sinon).
 const projects = [
   {
     id: 1,

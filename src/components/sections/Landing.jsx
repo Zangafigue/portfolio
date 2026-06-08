@@ -98,7 +98,7 @@ function Landing() {
           style={{ display: 'flex', gap: '0.8rem', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '3rem' }}
         >
           <a href="#projects" style={primaryBtn}>{t('landing.viewProjects')}</a>
-          <a href="/cv-zangafigue.pdf" target="_blank" rel="noopener noreferrer" style={ghostBtn}>
+          <a href={t('landing.cvFile')} target="_blank" rel="noopener noreferrer" style={ghostBtn}>
             {t('landing.downloadCv')}
           </a>
           <a href="#contact" style={ghostBtn}>{t('landing.contact')}</a>

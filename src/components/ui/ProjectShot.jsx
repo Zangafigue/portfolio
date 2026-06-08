@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-// Visuel d'un projet : tente public/projects/<slug>.png ; si absent/erreur,
+// Visuel d'un projet : tente public/projects/<slug>.jpg ; si absent/erreur,
 // affiche un placeholder élégant (cadre navigateur + dégradé + initiales + stack).
 function ProjectShot({ slug, name, stack = [], fit = 'cover' }) {
   const [error, setError] = useState(false)
