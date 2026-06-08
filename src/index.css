@@ -25,11 +25,22 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Décale l'ancre sous la barre de navigation fixe */
+section[id] {
+  scroll-margin-top: 72px;
+}
+
 body {
-  background-color: #0a0a1a;
   color: white;
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
+  background-color: #0a0a1a;
+  /* Dégradé radial sombre subtil (cyan/violet) — personnalité sans 3D */
+  background-image:
+    radial-gradient(55rem 55rem at 82% -8%, rgba(0, 180, 216, 0.10), transparent 60%),
+    radial-gradient(48rem 48rem at -5% 18%, rgba(124, 58, 237, 0.08), transparent 55%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 ::-webkit-scrollbar { width: 4px; }

@@ -1,7 +1,11 @@
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import timeline, { typeColors } from '../../data/timeline'
+import { useLoc } from '../../i18n/localize'
 
 function TimelineView() {
+  const { t } = useTranslation()
+  const loc = useLoc()
   return (
     <div style={{ position: 'relative', paddingLeft: '2rem' }}>
 
@@ -17,9 +21,9 @@ function TimelineView() {
 
       {timeline.map((item, index) => {
         const dotColor = item.current ? '#00B4D8' : typeColors[item.type]
-        const title = item.title
-        const year = item.year
-        const description = item.description
+        const title = loc(item.title)
+        const year = loc(item.year)
+        const description = loc(item.description)
         const isCurrent = item.current
 
         return (
@@ -69,7 +73,7 @@ function TimelineView() {
                       padding: '2px 8px',
                       borderRadius: '999px',
                     }}>
-                      NOW
+                      {t('certifications.now')}
                     </span>
                   )}
                 </h3>

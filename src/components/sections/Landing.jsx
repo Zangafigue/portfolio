@@ -1,7 +1,18 @@
 import { motion } from 'framer-motion'
-import ScrollIndicator from '../ui/ScrollIndicator'
+import { useTranslation } from 'react-i18next'
+import about from '../../data/about'
+import { useLoc } from '../../i18n/localize'
+
+const fade = (delay = 0) => ({
+  initial: { opacity: 0, y: 24 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.6, delay },
+})
 
 function Landing() {
+  const { t } = useTranslation()
+  const loc = useLoc()
+
   return (
     <section
       id="home"
@@ -11,141 +22,135 @@ function Landing() {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: '0 2rem',
+        padding: '7rem 1.5rem 4rem',
         textAlign: 'center',
-        position: 'relative',
       }}
     >
-      {/* Badge Open to Work */}
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-        style={{
-          display: 'inline-flex',
-          alignItems: 'center',
-          gap: '8px',
-          backgroundColor: 'rgba(0, 180, 216, 0.1)',
-          border: '1px solid rgba(0, 180, 216, 0.4)',
-          borderRadius: '999px',
-          padding: '6px 16px',
-          marginBottom: '2rem',
-        }}
-      >
-        <motion.span
-          animate={{ opacity: [1, 0.2, 1] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
+      <div style={{ maxWidth: '820px', width: '100%' }}>
+        {/* Badge */}
+        <motion.div
+          {...fade(0.05)}
           style={{
-            width: '8px',
-            height: '8px',
-            borderRadius: '50%',
-            backgroundColor: '#22c55e',
-            display: 'inline-block',
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '8px',
+            backgroundColor: 'rgba(34,197,94,0.08)',
+            border: '1px solid rgba(34,197,94,0.35)',
+            borderRadius: '999px',
+            padding: '6px 16px',
+            marginBottom: '1.8rem',
           }}
-        />
-        <span
+        >
+          <motion.span
+            animate={{ opacity: [1, 0.2, 1] }}
+            transition={{ duration: 1.5, repeat: Infinity }}
+            style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#22c55e' }}
+          />
+          <span style={{ fontSize: '0.82rem', color: '#22c55e', fontFamily: 'JetBrains Mono, monospace', letterSpacing: '0.04em' }}>
+            {t('landing.badge')}
+          </span>
+        </motion.div>
+
+        {/* Nom */}
+        <motion.h1
+          {...fade(0.15)}
           style={{
-            fontSize: '0.85rem',
-            color: '#00B4D8',
+            fontSize: 'clamp(2.4rem, 6vw, 4.6rem)',
+            fontWeight: 700,
+            lineHeight: 1.05,
+            color: '#fff',
+            marginBottom: '1.2rem',
+          }}
+        >
+          Zangafigué Mathias <span style={{ color: '#00B4D8' }}>TRAORE</span>
+        </motion.h1>
+
+        {/* Positionnement (proposition de valeur) */}
+        <motion.p
+          {...fade(0.3)}
+          style={{
+            fontSize: 'clamp(1.05rem, 2.4vw, 1.5rem)',
+            color: 'rgba(255,255,255,0.82)',
+            lineHeight: 1.5,
+            maxWidth: '640px',
+            margin: '0 auto 1rem',
+          }}
+        >
+          {t('landing.positioning')}
+        </motion.p>
+
+        {/* Rôle + stack */}
+        <motion.p
+          {...fade(0.4)}
+          style={{
+            fontSize: '0.92rem',
+            color: 'rgba(255,255,255,0.5)',
             fontFamily: 'JetBrains Mono, monospace',
-            letterSpacing: '0.05em',
+            marginBottom: '2.2rem',
           }}
         >
-          Open to internships
-        </span>
-      </motion.div>
+          {t('landing.role')} &nbsp;·&nbsp; {t('landing.stack')}
+        </motion.p>
 
-      {/* Nom principal */}
-      <motion.h1
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.4 }}
-        style={{
-          fontSize: 'clamp(2.5rem, 6vw, 5rem)',
-          fontWeight: 700,
-          fontFamily: 'Inter, sans-serif',
-          color: '#ffffff',
-          lineHeight: 1.1,
-          marginBottom: '1rem',
-        }}
-      >
-        Zangafigue Mathias
-        <br />
-        <span style={{ color: '#00B4D8' }}>TRAORE</span>
-      </motion.h1>
+        {/* CTAs */}
+        <motion.div
+          {...fade(0.5)}
+          style={{ display: 'flex', gap: '0.8rem', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '3rem' }}
+        >
+          <a href="#projects" style={primaryBtn}>{t('landing.viewProjects')}</a>
+          <a href="/cv-zangafigue.pdf" target="_blank" rel="noopener noreferrer" style={ghostBtn}>
+            {t('landing.downloadCv')}
+          </a>
+          <a href="#contact" style={ghostBtn}>{t('landing.contact')}</a>
+        </motion.div>
 
-      {/* Sous-titre */}
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.8 }}
-        style={{
-          fontSize: 'clamp(1rem, 2.5vw, 1.4rem)',
-          color: 'rgba(255,255,255,0.6)',
-          fontFamily: 'JetBrains Mono, monospace',
-          marginBottom: '3rem',
-        }}
-      >
-        Full-Stack Developer &nbsp;·&nbsp; Flutter &nbsp;·&nbsp; React &nbsp;·&nbsp; Node.js
-      </motion.p>
-
-      {/* Boutons CTA */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 1 }}
-        style={{
-          display: 'flex',
-          gap: '1rem',
-          flexWrap: 'wrap',
-          justifyContent: 'center',
-          marginBottom: '5rem',
-        }}
-      >
-        <a
-          href="#projects"
+        {/* Stats clés */}
+        <motion.div
+          {...fade(0.65)}
           style={{
-            padding: '12px 28px',
-            backgroundColor: '#00B4D8',
-            color: '#0a0a1a',
-            borderRadius: '8px',
-            fontWeight: 600,
-            fontFamily: 'Inter, sans-serif',
-            fontSize: '0.95rem',
-            textDecoration: 'none',
-            transition: 'opacity 0.2s',
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+            gap: '2.4rem',
+            borderTop: '1px solid rgba(255,255,255,0.08)',
+            paddingTop: '2rem',
           }}
-          onMouseEnter={e => e.currentTarget.style.opacity = '0.85'}
-          onMouseLeave={e => e.currentTarget.style.opacity = '1'}
         >
-          View Projects
-        </a>
-
-        <a
-          href="#contact"
-          style={{
-            padding: '12px 28px',
-            backgroundColor: 'transparent',
-            color: '#ffffff',
-            border: '1px solid rgba(255,255,255,0.3)',
-            borderRadius: '8px',
-            fontWeight: 600,
-            fontFamily: 'Inter, sans-serif',
-            fontSize: '0.95rem',
-            textDecoration: 'none',
-            transition: 'border-color 0.2s',
-          }}
-          onMouseEnter={e => e.currentTarget.style.borderColor = '#00B4D8'}
-          onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(255,255,255,0.3)'}
-        >
-          Contact Me
-        </a>
-      </motion.div>
-
-      <ScrollIndicator />
-
+          {about.facts.map((fact) => (
+            <div key={loc(fact.label)} style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '1.6rem', fontWeight: 700, color: '#00B4D8', fontFamily: 'JetBrains Mono, monospace' }}>
+                {fact.value}
+              </div>
+              <div style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.45)', marginTop: '2px' }}>
+                {loc(fact.label)}
+              </div>
+            </div>
+          ))}
+        </motion.div>
+      </div>
     </section>
   )
+}
+
+const primaryBtn = {
+  padding: '12px 26px',
+  backgroundColor: '#00B4D8',
+  color: '#0a0a1a',
+  borderRadius: '8px',
+  fontWeight: 600,
+  fontSize: '0.95rem',
+  textDecoration: 'none',
+}
+
+const ghostBtn = {
+  padding: '12px 26px',
+  backgroundColor: 'transparent',
+  color: '#fff',
+  border: '1px solid rgba(255,255,255,0.25)',
+  borderRadius: '8px',
+  fontWeight: 600,
+  fontSize: '0.95rem',
+  textDecoration: 'none',
 }
 
 export default Landing

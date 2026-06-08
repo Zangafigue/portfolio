@@ -1,13 +1,16 @@
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
+import { useLoc } from '../../i18n/localize'
 
 function CertifCard({ certif, index }) {
+  const { t } = useTranslation()
+  const loc = useLoc()
   const url = certif.credentialUrl
   const color = certif.color
-  const date = certif.date
+  const date = loc(certif.date)
   const name = certif.name
   const issuer = certif.issuer
   const skills = certif.skills
-  const featured = certif.featured
 
   return (
     <motion.div
@@ -85,7 +88,7 @@ function CertifCard({ certif, index }) {
             fontFamily: 'JetBrains Mono, monospace',
           }}
         >
-          View credential →
+          {t('certifications.viewCredential')}
         </a>
       )}
     </motion.div>

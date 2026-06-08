@@ -1,0 +1,83 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "certifications": "Certifications",
+    "contact": "Contact"
+  },
+  "landing": {
+    "badge": "Open to internships",
+    "role": "Full-Stack & Mobile Developer",
+    "positioning": "I turn ideas into shipped products — web, mobile, backend and AI.",
+    "stack": "React · Flutter · Node.js · Python · AI",
+    "tagline": "“Learn by building. Ship, then improve.”",
+    "viewProjects": "View Projects",
+    "contact": "Contact Me",
+    "downloadCv": "Download CV"
+  },
+  "about": {
+    "n": "01.",
+    "title": "About Me",
+    "languages": "LANGUAGES",
+    "school": "School",
+    "location": "Location",
+    "year": "Year"
+  },
+  "skills": {
+    "n": "02.",
+    "title": "Skills & Tech Stack"
+  },
+  "projects": {
+    "n": "03.",
+    "title": "Projects",
+    "featured": "FEATURED",
+    "featuredTitle": "Featured work",
+    "allTitle": "More projects",
+    "caseStudy": "Case study",
+    "role": "Role",
+    "outcome": "Outcome",
+    "code": "Code",
+    "demo": "Live",
+    "categories": {
+      "All": "All",
+      "Web": "Web",
+      "Mobile": "Mobile",
+      "Backend": "Backend",
+      "AI": "AI / Automation",
+      "Other": "Other"
+    }
+  },
+  "certifications": {
+    "n": "04.",
+    "title": "Certifications & Journey",
+    "tabCertifications": "Certifications",
+    "tabTimeline": "Timeline",
+    "viewCredential": "View credential →",
+    "now": "NOW"
+  },
+  "contact": {
+    "n": "05.",
+    "title": "Get in Touch",
+    "intro": "I am currently looking for internship opportunities. Whether you have a question, a project idea, or just want to say hello — my inbox is always open.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "your@email.com",
+    "messagePlaceholder": "Your message...",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "Something went wrong. Please try again.",
+    "linkGithub": "GitHub",
+    "linkTwitter": "X (Twitter)",
+    "linkEmail": "Email"
+  },
+  "scrollIndicator": "SCROLL TO EXPLORE",
+  "footer": {
+    "note": "Built with React, Vite & Framer Motion",
+    "backToTop": "Back to top ↑"
+  }
+}
