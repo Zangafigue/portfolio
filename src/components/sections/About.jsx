@@ -67,6 +67,25 @@ function About() {
 
           {/* Colonne gauche — Bio */}
           <div>
+            <motion.img
+              src="/me.jpg"
+              alt="Zangafigué Mathias TRAORE"
+              onError={(e) => { e.currentTarget.style.display = 'none' }}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              style={{
+                width: '150px',
+                height: '150px',
+                objectFit: 'cover',
+                borderRadius: '18px',
+                border: '1px solid rgba(0,180,216,0.25)',
+                boxShadow: '0 10px 30px rgba(0,0,0,0.4)',
+                marginBottom: '1.6rem',
+              }}
+            />
+
             {bio.map((paragraph, index) => (
               <motion.p
                 key={index}
