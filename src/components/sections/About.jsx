@@ -76,10 +76,11 @@ function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
               style={{
-                width: '150px',
-                height: '150px',
+                width: 'min(230px, 70%)',
+                aspectRatio: '1 / 1',
                 objectFit: 'cover',
-                borderRadius: '18px',
+                borderRadius: '20px',
+                display: 'block',
                 border: '1px solid rgba(0,180,216,0.25)',
                 boxShadow: '0 10px 30px rgba(0,0,0,0.4)',
                 marginBottom: '1.6rem',
