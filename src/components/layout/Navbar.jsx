@@ -5,7 +5,7 @@ import useScrollSection from '../../hooks/useScrollSection'
 import useMediaQuery from '../../hooks/useMediaQuery'
 import LanguageToggle from './LanguageToggle'
 
-const navIds = ['home', 'about', 'skills', 'projects', 'certifications', 'contact']
+const navIds = ['home', 'about', 'skills', 'projects', 'services', 'certifications', 'contact']
 
 function navTo(id) {
   if (id === 'home') {

@@ -69,7 +69,7 @@ function About() {
           <div>
             <motion.img
               src="/me.jpg"
-              alt="Zangafigué Mathias TRAORE"
+              alt="Zangafigue Mathias TRAORE"
               onError={(e) => { e.currentTarget.style.display = 'none' }}
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}

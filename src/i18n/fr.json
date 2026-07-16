@@ -4,19 +4,20 @@
     "about": "À propos",
     "skills": "Compétences",
     "projects": "Projets",
+    "services": "Services",
     "certifications": "Certifications",
     "contact": "Contact"
   },
   "landing": {
-    "badge": "Ouvert aux stages",
+    "badge": "Disponible pour missions freelance",
     "role": "Développeur Full-Stack & Mobile",
     "positioning": "Je transforme des idées en produits livrés — web, mobile, backend et IA.",
     "stack": "React · Flutter · Node.js · Python · IA",
     "tagline": "« J'apprends en construisant. Je livre, puis j'améliore. »",
     "viewProjects": "Voir mes projets",
-    "contact": "Me contacter",
+    "contact": "Discutons de votre projet",
     "downloadCv": "Télécharger mon CV",
-    "cvFile": "/CV_Zangafigu%C3%A9_Mathias_TRAORE.pdf"
+    "cvFile": "/CV_Zangafigue_Mathias_TRAORE.pdf"
   },
   "about": {
     "n": "01.",
@@ -50,8 +51,14 @@
       "Other": "Autres"
     }
   },
-  "certifications": {
+  "services": {
     "n": "04.",
+    "title": "Ce que je peux faire pour vous",
+    "intro": "Du besoin au produit livré. Voici les prestations sur lesquelles j'interviens — en français comme en anglais.",
+    "cta": "Discutons de votre projet"
+  },
+  "certifications": {
+    "n": "05.",
     "title": "Certifications & Parcours",
     "tabCertifications": "Certifications",
     "tabTimeline": "Parcours",
@@ -59,9 +66,9 @@
     "now": "ACTUEL"
   },
   "contact": {
-    "n": "05.",
-    "title": "Me contacter",
-    "intro": "Je recherche actuellement un stage. Que vous ayez une question, une idée de projet, ou simplement envie de dire bonjour — ma boîte mail est toujours ouverte.",
+    "n": "06.",
+    "title": "Travaillons ensemble",
+    "intro": "Un projet à construire, une question, une opportunité ? Écrivez-moi — ma boîte mail est toujours ouverte.",
     "name": "Nom",
     "email": "Email",
     "message": "Message",
@@ -72,7 +79,10 @@
     "sending": "Envoi...",
     "success": "Message envoyé avec succès !",
     "error": "Une erreur est survenue. Veuillez réessayer.",
+    "viewProfile": "Voir mon profil",
     "linkGithub": "GitHub",
+    "linkCodeur": "Codeur.com",
+    "linkFiverr": "Fiverr",
     "linkTwitter": "X (Twitter)",
     "linkEmail": "Email"
   },

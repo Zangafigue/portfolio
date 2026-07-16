@@ -23,7 +23,7 @@ function Footer() {
         color: 'rgba(255,255,255,0.4)',
       }}
     >
-      <span>© {year} Zangafigué Mathias TRAORE</span>
+      <span>© {year} Zangafigue Mathias TRAORE</span>
       <span>{t('footer.note')}</span>
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}

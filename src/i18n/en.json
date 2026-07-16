@@ -4,19 +4,20 @@
     "about": "About",
     "skills": "Skills",
     "projects": "Projects",
+    "services": "Services",
     "certifications": "Certifications",
     "contact": "Contact"
   },
   "landing": {
-    "badge": "Open to internships",
+    "badge": "Available for freelance work",
     "role": "Full-Stack & Mobile Developer",
     "positioning": "I turn ideas into shipped products — web, mobile, backend and AI.",
     "stack": "React · Flutter · Node.js · Python · AI",
     "tagline": "“Learn by building. Ship, then improve.”",
     "viewProjects": "View Projects",
-    "contact": "Contact Me",
+    "contact": "Let's talk about your project",
     "downloadCv": "Download CV",
-    "cvFile": "/Resume_Zangafigu%C3%A9_Mathias_TRAORE.pdf"
+    "cvFile": "/Resume_Zangafigue_Mathias_TRAORE.pdf"
   },
   "about": {
     "n": "01.",
@@ -50,8 +51,14 @@
       "Other": "Other"
     }
   },
-  "certifications": {
+  "services": {
     "n": "04.",
+    "title": "What I can do for you",
+    "intro": "From idea to shipped product. Here's what I work on — in French or English.",
+    "cta": "Let's talk about your project"
+  },
+  "certifications": {
+    "n": "05.",
     "title": "Certifications & Journey",
     "tabCertifications": "Certifications",
     "tabTimeline": "Timeline",
@@ -59,9 +66,9 @@
     "now": "NOW"
   },
   "contact": {
-    "n": "05.",
-    "title": "Get in Touch",
-    "intro": "I am currently looking for internship opportunities. Whether you have a question, a project idea, or just want to say hello — my inbox is always open.",
+    "n": "06.",
+    "title": "Let's work together",
+    "intro": "Got a project to build, a question, or an opportunity? Reach out — my inbox is always open.",
     "name": "Name",
     "email": "Email",
     "message": "Message",
@@ -72,7 +79,10 @@
     "sending": "Sending...",
     "success": "Message sent successfully!",
     "error": "Something went wrong. Please try again.",
+    "viewProfile": "View my profile",
     "linkGithub": "GitHub",
+    "linkCodeur": "Codeur.com",
+    "linkFiverr": "Fiverr",
     "linkTwitter": "X (Twitter)",
     "linkEmail": "Email"
   },

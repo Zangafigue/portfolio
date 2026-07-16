@@ -83,12 +83,12 @@ const timeline = [
   {
     id: 9,
     year: { en: "2026", fr: "2026" },
-    title: { en: "Looking for an internship", fr: "En recherche de stage" },
+    title: { en: "Freelance & product work", fr: "Freelance & développement produit" },
     description: {
-      en: "Actively seeking an internship — shipping this portfolio and deepening my full-stack skills.",
-      fr: "Activement à la recherche d'un stage — je livre ce portfolio et j'approfondis mon profil full-stack.",
+      en: "Building products as a freelancer and deepening my full-stack profile — web, mobile, backend and AI.",
+      fr: "Je développe des produits en freelance et j'approfondis mon profil full-stack — web, mobile, backend et IA.",
     },
-    type: "education",
+    type: "project",
     current: true,
   },
 ]

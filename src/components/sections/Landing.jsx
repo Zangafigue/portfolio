@@ -62,7 +62,7 @@ function Landing() {
             marginBottom: '1.2rem',
           }}
         >
-          Zangafigué Mathias <span style={{ color: '#00B4D8' }}>TRAORE</span>
+          Zangafigue Mathias <span style={{ color: '#00B4D8' }}>TRAORE</span>
         </motion.h1>
 
         {/* Positionnement (proposition de valeur) */}

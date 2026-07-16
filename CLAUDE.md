@@ -4,7 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-Single-page **bilingual FR/EN** portfolio for Zangafigué Mathias TRAORE, intended for **Vercel**. It is **product-first**: a clean dark page that leads with projects as illustrated case studies, to land an internship by showing he *ships products*. `PORTFOLIO_BRIEF.md` is the source of truth for the owner's identity/skills/projects (in French) — read it for content/copy work.
+Single-page **bilingual FR/EN** portfolio for Zangafigue Mathias TRAORE, intended for **Vercel**. It is **product-first**: a clean dark page that leads with projects as illustrated case studies, positioning him as a developer who *ships products*. It serves three audiences at once — freelance clients, employers, and future internships — so the copy is deliberately **not** internship-specific (he already has one starting Aug 2026 and freelances on Fiverr / codeur.com). `PORTFOLIO_BRIEF.md` is the source of truth for the owner's identity/skills/projects (in French) — read it for content/copy work.
+
+**Name spelling is a brand rule**: always **`Zangafigue`** (no accent) in text, handles, URLs and filenames — a diacritic form is untypable. The stylized `Zǎngãfīgē` is for the logo / visual identity only. Do not reintroduce `Zangafigué`.
 
 A previous version was a 3D "scroll through space" experience. That was dropped as the main UX (misaligned with the product-builder message + a junior-portfolio cliché), **but the 3D code is preserved, unmounted**, in `components/3d/*` (plus `data/planets.js`, `hooks/useScrollOffset.js`) for a planned future "lab" page. Don't assume it is wired into the app.
 
@@ -28,7 +30,7 @@ ESLint notes:
 A plain, scrollable single page — **no 3D, no canvas** in the live app.
 
 - `App.jsx` renders `<Navbar>` (fixed top bar), `<SectionOverlay>`, `<Footer>`.
-- `components/layout/SectionOverlay.jsx` stacks the six sections (Landing / About / Skills / Projects / Certifications / Contact) in normal document flow. Each section has an `id` used as a scroll anchor; `index.css` sets `section[id] { scroll-margin-top }` so anchored nav clears the fixed navbar.
+- `components/layout/SectionOverlay.jsx` stacks the seven sections (Landing / About / Skills / Projects / **Services** / Certifications / Contact) in normal document flow. The order is deliberate: proof (Projects) comes before the offer (Services), which funnels into Contact. Each section has an `id` used as a scroll anchor; `index.css` sets `section[id] { scroll-margin-top }` so anchored nav clears the fixed navbar.
 - The background is a CSS radial gradient on `body` (`index.css`). The bundle is lean (~130 KB gzip) because **nothing live imports `components/3d`**, so three.js / r3f / drei are tree-shaken out.
 
 ### Navigation
@@ -60,10 +62,14 @@ A plain, scrollable single page — **no 3D, no canvas** in the live app.
 - **Orphaned components**: `ui/SkillBar.jsx` and `ui/ScrollIndicator.jsx` (unused since the product-first redesign), plus `components/3d/SpaceShip.jsx`, `sections/Resume.jsx`, `sections/Stats.jsx`, `ui/PlanetCard.jsx`, `ui/CertifBadge.jsx`.
 - **Routing**: `react-router-dom` is a dependency but unused (single page, no routes).
 
+### Services (the freelance conversion block)
+
+`sections/Services.jsx` maps `data/services.js`. It is deliberately **dev/product only** (web, mobile, backend/API & SaaS, automation & AI, UI design, maintenance & consulting). The owner's e-book / office-software / IT-literacy brand targets a *different* audience (beginners) and lives on another funnel — **do not merge it in here**; that recreates the "little bit of everything" anti-positioning his brand rules forbid. Copy rule: plain language, explain any jargon, no invented promises.
+
 ## Contact form
 
 `sections/Contact.jsx` sends via EmailJS (`@emailjs/browser`); `SERVICE_ID` / `TEMPLATE_ID` / `PUBLIC_KEY` are inline constants (public keys are client-side by design). No `.env`.
 
 ## Deployment
 
-`vercel.json` pins the Vite framework / build command / `dist` output. URL-root static assets live in `public/`: the two language CVs `CV_Zangafigué_Mathias_TRAORE.pdf` (FR) and `Resume_Zangafigué_Mathias_TRAORE.pdf` (EN) — the hero CV button picks one per language via `landing.cvFile` in `i18n/*.json` (path is percent-encoded for the accent); `hero.png` (OG/Twitter share image); `me.jpg` (About portrait, hidden if absent); and `projects/<slug>.jpg` (project screenshots, slug from `data/projects.js`).
+`vercel.json` pins the Vite framework / build command / `dist` output. URL-root static assets live in `public/`: the two language CVs `CV_Zangafigue_Mathias_TRAORE.pdf` (FR) and `Resume_Zangafigue_Mathias_TRAORE.pdf` (EN) — the hero CV button picks one per language via `landing.cvFile` in `i18n/*.json`; `hero.png` (OG/Twitter share image); `me.jpg` (About portrait, hidden if absent); and `projects/<slug>.jpg` (project screenshots, slug from `data/projects.js`).

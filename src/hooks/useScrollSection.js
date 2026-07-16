@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-const sections = ['home', 'about', 'skills', 'projects', 'certifications', 'contact']
+const sections = ['home', 'about', 'skills', 'projects', 'services', 'certifications', 'contact']
 
 function useScrollSection() {
   const [activeSection, setActiveSection] = useState('home')

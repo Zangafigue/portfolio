@@ -1,6 +1,6 @@
 // Champs traduisibles en { en, fr } (chaîne ou tableau). Voir i18n/localize.js.
 const about = {
-  name: "Zangafigué Mathias TRAORE",
+  name: "Zangafigue Mathias TRAORE",
   school: "Burkina Institute of Technology (BIT)",
   location: "Koudougou, Burkina Faso",
   year: {
@@ -9,15 +9,15 @@ const about = {
   },
   bio: {
     en: [
-      "I'm a second-year Computer Science student at the Burkina Institute of Technology, on the Programming & Entrepreneurship track.",
       "I'm a full-stack & mobile developer who turns ideas into shipped products — from web SaaS to an educational mobile game — with a product/design sensibility and a strong interest in AI and cybersecurity.",
       "In about a year I've shipped ~14 projects and taken part in 3 hackathons, including as Lead Developer on AgroConnect BF, a B2B agricultural platform for Burkina Faso.",
+      "I'm a second-year Computer Science student at the Burkina Institute of Technology (Programming & Entrepreneurship track), building real products alongside my studies.",
       "Beyond building, I'm hands-on with IT: software maintenance, OS installation and technical support.",
     ],
     fr: [
-      "Je suis étudiant en 2ᵉ année d'informatique au Burkina Institute of Technology, option Programmation & Entrepreneuriat.",
       "Développeur full-stack & mobile, je transforme des idées en produits livrés — du SaaS web au jeu mobile éducatif — avec une sensibilité produit/design et un goût marqué pour l'IA et la cybersécurité.",
       "En environ un an, j'ai livré ~14 projets et participé à 3 hackathons, notamment comme Lead Dev sur AgroConnect BF, une plateforme agricole B2B pour le Burkina Faso.",
+      "Étudiant en 2ᵉ année d'informatique au Burkina Institute of Technology (option Programmation & Entrepreneuriat), je construis des produits réels en parallèle de mes études.",
       "Au-delà du dev, je suis à l'aise côté IT : maintenance logicielle, installation d'OS et support technique.",
     ],
   },

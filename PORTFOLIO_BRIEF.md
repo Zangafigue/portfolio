@@ -1,4 +1,4 @@
-# Portfolio Brief — Zangafigué Mathias TRAORE
+# Portfolio Brief — Zangafigue Mathias TRAORE
 
 > **But de ce document** : contexte de référence à placer dans le repo de mon portfolio.
 > Un agent (Claude Code) peut le lire au `/init` pour comprendre qui je suis, ce que je
@@ -9,10 +9,10 @@
 
 ## 1. Identité
 
-- **Nom** : Zangafigué Mathias TRAORE (certains documents : « Mathias Zangafigue TRAORE »)
+- **Nom** : **Zangafigue Mathias TRAORE** — forme sans accent, seule forme autorisée dans les textes, handles, URLs et noms de fichiers (règle de marque : une forme diacritée est intapable). La forme stylisée « Zǎngãfīgē » est réservée au logo / à l'identité visuelle.
 - **Localisation** : Koudougou, Burkina Faso
 - **École** : Burkina Institute of Technology (BIT) — Licence Informatique, 2ᵉ année (option *Programmation & Entrepreneuriat*)
-- **Statut** : étudiant, **en recherche de stage**
+- **Statut** : étudiant · **stage décroché (démarre août 2026)** · **freelance** (Fiverr, codeur.com) · ouvert aux opportunités (job / futurs stages)
 - **Email** : mathiastraore08@gmail.com
 - **GitHub** : https://github.com/Zangafigue
 - **X / Twitter** : https://x.com/Zanga286
@@ -79,7 +79,8 @@
 
 ## 8. Pour construire le portfolio (préférences & pistes)
 
-- **Objectif du site** : décrocher un **stage** ; montrer que je *livre* des produits, pas seulement du code.
+- **Objectif du site** : montrer que je *livre* des produits, pas seulement du code. Il sert **trois publics à la fois** — clients freelance, employeurs, futurs stages — donc **aucune copy spécifique « stage »**. Positionnement : « développeur qui livre des produits ».
+- **Frontière de marque** : le portfolio est la porte **dev/produit**. L'e-book, la bureautique et la vulgarisation informatique (cible débutants) relèvent de l'autre entonnoir (TikTok / Facebook / WhatsApp) et **ne vont pas ici** — sinon on retombe dans le « fourre-tout » anti-positionnement.
 - **Base existante** : repo `portfolio` (React + Three.js, thème spatial) — peut servir de point de départ.
 - **Sections suggérées** : Hero (nom + tagline + CTA contact/CV) · À propos · Compétences (groupées) · Projets (cartes avec stack + liens repo/démo + rôle) · Hackathons & Certifs · Contact.
 - **À mettre en avant** : breadth web+mobile+IA, rôle de **Lead Dev** sur AgroConnect, les **hackathons**, l'intégration **LLM**, et la régularité (beaucoup d'expéditions en peu de temps).
