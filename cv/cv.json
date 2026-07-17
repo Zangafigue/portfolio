@@ -1,0 +1,144 @@
+{
+  "personalInfo": {
+    "fullName": "Zangafigue Mathias TRAORE",
+    "jobTitle": "Développeur Full-Stack & Mobile",
+    "email": "mathiastraore08@gmail.com",
+    "phone": "+226 07 58 02 39",
+    "location": "Koudougou, Burkina Faso",
+    "birthDate": "",
+    "birthPlace": "",
+    "nationality": "",
+    "linkedin": "",
+    "github": "github.com/Zangafigue",
+    "website": "portfolio-lyart-nu-83.vercel.app",
+    "summary": "Développeur full-stack & mobile (React/TypeScript, Flutter, Python/Django) qui transforme des idées en produits livrés. 14 projets livrés et 3 hackathons en un an, dont un rôle de Lead Dev sur une plateforme B2B multi-plateforme (web + mobile + API). Sensibilité produit/design, intérêt marqué pour l'IA appliquée et la cybersécurité. Certifié Google Project Management, Anthropic (MCP) et OPSWAT (ICIP).",
+    "photo": "",
+    "originalPhoto": "",
+    "photoSettings": {
+      "shape": "round",
+      "filter": "none",
+      "crop": { "x": 0, "y": 0 },
+      "zoom": 1,
+      "aspect": 1
+    }
+  },
+  "experience": [],
+  "education": [
+    {
+      "id": "edu-bit",
+      "school": "Burkina Institute of Technology (BIT)",
+      "degree": "Licence Informatique",
+      "field": "Option Programmation & Entrepreneuriat",
+      "startDate": "2024-10",
+      "endDate": "",
+      "current": true,
+      "description": "Développement logiciel, POO, systèmes d'information et entrepreneuriat technologique."
+    },
+    {
+      "id": "edu-bac",
+      "school": "Lycée Privé Eben Ezer 2",
+      "degree": "Baccalauréat D — Série scientifique",
+      "field": "",
+      "startDate": "2023-09",
+      "endDate": "2024-06",
+      "current": false,
+      "description": ""
+    }
+  ],
+  "skills": [
+    { "name": "Front-end : React 19, TypeScript, Tailwind CSS, Vue.js", "level": "Avancé", "showLevel": true },
+    { "name": "Mobile : Flutter / Dart (BLoC, Hive, offline-first)", "level": "Intermédiaire", "showLevel": true },
+    { "name": "Back-end : Node.js / Express, Python (Django/DRF, FastAPI, Flask)", "level": "Avancé", "showLevel": true },
+    { "name": "Bases de données & API : PostgreSQL / Supabase (RLS), MongoDB, API REST, JWT", "level": "Avancé", "showLevel": true },
+    { "name": "IA appliquée : intégration Gemini, Groq (Llama 3.3), MCP, automatisation", "level": "Intermédiaire", "showLevel": true },
+    { "name": "Outils & DevOps : Git/GitHub, Docker, Vite, Vercel, Figma", "level": "Intermédiaire", "showLevel": true }
+  ],
+  "languages": [
+    { "name": "Français", "level": "Natif / Bilingue", "showLevel": true },
+    { "name": "Dioula", "level": "Natif / Bilingue", "showLevel": true },
+    { "name": "Anglais", "level": "Intermédiaire", "showLevel": true }
+  ],
+  "interests": [
+    { "name": "Développement web & mobile" },
+    { "name": "Intelligence artificielle" },
+    { "name": "Cybersécurité" },
+    { "name": "Entrepreneuriat" },
+    { "name": "Basketball" }
+  ],
+  "certifications": [
+    { "name": "Introduction to Critical Infrastructure Protection (ICIP)", "date": "Mai 2026", "org": "OPSWAT Academy" },
+    { "name": "Introduction to Model Context Protocol (MCP)", "date": "Avr. 2026", "org": "Anthropic Academy" },
+    { "name": "AI Fluency for Students", "date": "Avr. 2026", "org": "Anthropic Academy" },
+    { "name": "Google Project Management — Foundations & Project Initiation", "date": "2025", "org": "Google Career Certificates (Coursera)" }
+  ],
+  "projects": [
+    {
+      "id": "proj-agroconnect",
+      "title": "AgroConnect BF — Plateforme agricole B2B",
+      "type": "Projet académique (BIT) · Lead Dev · 2026",
+      "description": "",
+      "bullets": [
+        "Architecturé une plateforme agricole B2B multi-plateforme reliant agriculteurs, acheteurs et transporteurs : web (React/Vite), mobile (Flutter) et API REST (Node.js/Express).",
+        "Piloté l'équipe web en tant que Lead Dev : front structuré autour de 4 rôles métier (agriculteur, acheteur, transporteur, admin) et intégration coordonnée de 3 dépôts.",
+        "Mis en place l'authentification JWT, la gestion des rôles et la documentation d'API (Swagger)."
+      ]
+    },
+    {
+      "id": "proj-zamsma",
+      "title": "Zamsma — Jeu mobile éducatif (chimie)",
+      "type": "Hackathon des Grandes Écoles 2026 · Team Mirror",
+      "description": "",
+      "bullets": [
+        "Développé un jeu mobile éducatif de chimie offline-first (Flutter : BLoC, Hive), conçu autour de la taxonomie de Bloom pour une progression pédagogique structurée.",
+        "Construit le backend Django 5 / DRF (PostgreSQL, Redis, JWT), conteneurisé avec Docker.",
+        "Ajouté un mode défi en réseau local, utilisable sans connexion Internet."
+      ]
+    },
+    {
+      "id": "proj-gymx",
+      "title": "GymX v2 — SaaS de gestion de salle de sport",
+      "type": "Projet personnel · React 19 / TypeScript / Supabase · 2026",
+      "description": "",
+      "bullets": [
+        "Conçu un SaaS de réservation en temps réel avec contrôle de capacité et anti-doublon.",
+        "Implémenté l'authentification et la sécurité au niveau ligne (Supabase RLS) avec gestion des rôles (RBAC) et back-office CRUD.",
+        "Livré les analytics (Recharts) et une interface bilingue FR/EN. Démo : gym-x-v2.vercel.app"
+      ]
+    },
+    {
+      "id": "proj-cvbuilder",
+      "title": "CV Builder Pro — Générateur de CV",
+      "type": "Projet personnel · React 19 / Vite / IA · 2026",
+      "description": "",
+      "bullets": [
+        "Développé un générateur de CV : 14 modèles, export PDF compatible ATS, Word et JSON.",
+        "Intégré l'IA Gemini (analyse de CV + traduction FR↔EN) via un proxy serverless, plus un moteur de suggestions local.",
+        "Couvert les fonctions critiques par des tests automatisés (Vitest). Démo : cv-builder-three-tau.vercel.app"
+      ]
+    }
+  ],
+  "extracurricular": [
+    { "id": "extra-hge", "name": "Hackathon des Grandes Écoles (HGE) — projet Zamsma avec la Team Mirror (2026)" },
+    { "id": "extra-huawei", "name": "HUAWEI ICT Competition — track Réseau, épreuves nationales (2025-2026)" },
+    { "id": "extra-cyber", "name": "Hackathon Cybersécurité — Merradis Academy (2025-2026)" },
+    { "id": "extra-delegue", "name": "Délégué de classe — cohorte CS27, Burkina Institute of Technology" }
+  ],
+  "customSections": [],
+  "sectionsOrder": [
+    "projects",
+    "skills",
+    "education",
+    "certifications",
+    "languages",
+    "extracurricular",
+    "interests",
+    "experience",
+    "customSections"
+  ],
+  "template": "ats-3",
+  "themeColor": "#00B4D8",
+  "typography": {
+    "fontFamily": "Inter",
+    "fontSize": "medium"
+  }
+}
