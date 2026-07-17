@@ -11,7 +11,7 @@
     "linkedin": "",
     "github": "github.com/Zangafigue",
     "website": "portfolio-lyart-nu-83.vercel.app",
-    "summary": "Développeur full-stack & mobile (React/TypeScript, Flutter, Python/Django) qui transforme des idées en produits livrés. 14 projets livrés et 3 hackathons en un an, dont un rôle de Lead Dev sur une plateforme B2B multi-plateforme (web + mobile + API). Sensibilité produit/design, intérêt marqué pour l'IA appliquée et la cybersécurité. Certifié Google Project Management, Anthropic (MCP) et OPSWAT (ICIP).",
+    "summary": "Développeur full-stack & mobile (React/TypeScript, Flutter, Python/Django) qui transforme des idées en produits livrés, avec un intérêt marqué pour l'IA appliquée et la cybersécurité. 14 projets et 3 hackathons en un an, dont un rôle de Lead Dev sur une plateforme B2B multi-plateforme (web + mobile + API). Certifié Google Project Management, Anthropic (MCP) et OPSWAT (ICIP).",
     "photo": "",
     "originalPhoto": "",
     "photoSettings": {
@@ -58,13 +58,7 @@
     { "name": "Dioula", "level": "Natif / Bilingue", "showLevel": true },
     { "name": "Anglais", "level": "Intermédiaire", "showLevel": true }
   ],
-  "interests": [
-    { "name": "Développement web & mobile" },
-    { "name": "Intelligence artificielle" },
-    { "name": "Cybersécurité" },
-    { "name": "Entrepreneuriat" },
-    { "name": "Basketball" }
-  ],
+  "interests": [],
   "certifications": [
     { "name": "Introduction to Critical Infrastructure Protection (ICIP)", "date": "Mai 2026", "org": "OPSWAT Academy" },
     { "name": "Introduction to Model Context Protocol (MCP)", "date": "Avr. 2026", "org": "Anthropic Academy" },
@@ -78,9 +72,8 @@
       "type": "Projet académique (BIT) · Lead Dev · 2026",
       "description": "",
       "bullets": [
-        "Architecturé une plateforme agricole B2B multi-plateforme reliant agriculteurs, acheteurs et transporteurs : web (React/Vite), mobile (Flutter) et API REST (Node.js/Express).",
-        "Piloté l'équipe web en tant que Lead Dev : front structuré autour de 4 rôles métier (agriculteur, acheteur, transporteur, admin) et intégration coordonnée de 3 dépôts.",
-        "Mis en place l'authentification JWT, la gestion des rôles et la documentation d'API (Swagger)."
+        "Architecturé une plateforme agricole B2B multi-plateforme : web (React/Vite), mobile (Flutter) et API REST (Node.js/Express), avec authentification JWT et gestion des rôles.",
+        "Piloté l'équipe web en tant que Lead Dev et coordonné l'intégration de 3 dépôts en une plateforme livrée."
       ]
     },
     {
@@ -89,9 +82,8 @@
       "type": "Hackathon des Grandes Écoles 2026 · Team Mirror",
       "description": "",
       "bullets": [
-        "Développé un jeu mobile éducatif de chimie offline-first (Flutter : BLoC, Hive), conçu autour de la taxonomie de Bloom pour une progression pédagogique structurée.",
-        "Construit le backend Django 5 / DRF (PostgreSQL, Redis, JWT), conteneurisé avec Docker.",
-        "Ajouté un mode défi en réseau local, utilisable sans connexion Internet."
+        "Développé un jeu mobile éducatif de chimie offline-first (Flutter : BLoC, Hive), conçu autour de la taxonomie de Bloom.",
+        "Construit le backend Django 5 / DRF (PostgreSQL, Redis, JWT), conteneurisé avec Docker, avec un mode défi en réseau local."
       ]
     },
     {
@@ -100,20 +92,8 @@
       "type": "Projet personnel · React 19 / TypeScript / Supabase · 2026",
       "description": "",
       "bullets": [
-        "Conçu un SaaS de réservation en temps réel avec contrôle de capacité et anti-doublon.",
-        "Implémenté l'authentification et la sécurité au niveau ligne (Supabase RLS) avec gestion des rôles (RBAC) et back-office CRUD.",
-        "Livré les analytics (Recharts) et une interface bilingue FR/EN. Démo : gym-x-v2.vercel.app"
-      ]
-    },
-    {
-      "id": "proj-cvbuilder",
-      "title": "CV Builder Pro — Générateur de CV",
-      "type": "Projet personnel · React 19 / Vite / IA · 2026",
-      "description": "",
-      "bullets": [
-        "Développé un générateur de CV : 14 modèles, export PDF compatible ATS, Word et JSON.",
-        "Intégré l'IA Gemini (analyse de CV + traduction FR↔EN) via un proxy serverless, plus un moteur de suggestions local.",
-        "Couvert les fonctions critiques par des tests automatisés (Vitest). Démo : cv-builder-three-tau.vercel.app"
+        "Conçu un SaaS de réservation en temps réel (contrôle de capacité, anti-doublon) avec back-office CRUD et gestion des rôles (RBAC).",
+        "Implémenté l'authentification et la sécurité au niveau ligne (Supabase RLS), les analytics (Recharts) et une interface bilingue FR/EN. Démo : gym-x-v2.vercel.app"
       ]
     }
   ],
@@ -131,7 +111,6 @@
     "certifications",
     "languages",
     "extracurricular",
-    "interests",
     "experience",
     "customSections"
   ],
