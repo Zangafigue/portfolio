@@ -9,15 +9,15 @@ const about = {
   },
   bio: {
     en: [
-      "I'm a full-stack & mobile developer who turns ideas into shipped products — from web SaaS to an educational mobile game — with a product/design sensibility and a strong interest in AI and cybersecurity.",
+      "I'm a web & mobile developer who turns ideas into shipped products — from web SaaS to an educational mobile game — with a product/design sensibility and a strong interest in AI and cybersecurity.",
       "In about a year I've shipped ~14 projects and taken part in 3 hackathons, including as Lead Developer on AgroConnect BF, a B2B agricultural platform for Burkina Faso.",
-      "I'm a second-year Computer Science student at the Burkina Institute of Technology (Programming & Entrepreneurship track), building real products alongside my studies.",
+      "I'm a second-year Computer Science student at the Burkina Institute of Technology (Programming & Entrepreneurship track), building real products alongside my studies. I recently completed a developer internship at WoeLab/HubCity in Lomé, contributing to the SCoPE project and learning from an existing product codebase.",
       "Beyond building, I'm hands-on with IT: software maintenance, OS installation and technical support.",
     ],
     fr: [
-      "Développeur full-stack & mobile, je transforme des idées en produits livrés — du SaaS web au jeu mobile éducatif — avec une sensibilité produit/design et un goût marqué pour l'IA et la cybersécurité.",
+      "Développeur web & mobile, je transforme des idées en produits livrés — du SaaS web au jeu mobile éducatif — avec une sensibilité produit/design et un goût marqué pour l'IA et la cybersécurité.",
       "En environ un an, j'ai livré ~14 projets et participé à 3 hackathons, notamment comme Lead Dev sur AgroConnect BF, une plateforme agricole B2B pour le Burkina Faso.",
-      "Étudiant en 2ᵉ année d'informatique au Burkina Institute of Technology (option Programmation & Entrepreneuriat), je construis des produits réels en parallèle de mes études.",
+      "Étudiant en 2ᵉ année d'informatique au Burkina Institute of Technology (option Programmation & Entrepreneuriat), je construis des produits réels en parallèle de mes études. J'ai récemment terminé un stage de développeur chez WoeLab/HubCity à Lomé, où j'ai contribué au projet SCoPE et travaillé sur un codebase existant.",
       "Au-delà du dev, je suis à l'aise côté IT : maintenance logicielle, installation d'OS et support technique.",
     ],
   },

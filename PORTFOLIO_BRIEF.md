@@ -12,18 +12,27 @@
 - **Nom** : **Zangafigue Mathias TRAORE** — forme sans accent, seule forme autorisée dans les textes, handles, URLs et noms de fichiers (règle de marque : une forme diacritée est intapable). La forme stylisée « Zǎngãfīgē » est réservée au logo / à l'identité visuelle.
 - **Localisation** : Koudougou, Burkina Faso
 - **École** : Burkina Institute of Technology (BIT) — Licence Informatique, 2ᵉ année (option *Programmation & Entrepreneuriat*)
-- **Statut** : étudiant · **stage décroché (démarre août 2026)** · **freelance** (Fiverr, codeur.com) · ouvert aux opportunités (job / futurs stages)
-- **Email** : mathiastraore08@gmail.com
+- **Statut** : étudiant · **stage développeur web & mobile terminé le 26 septembre 2026 chez WoeLab / HubCity Africa** · **freelance** (Fiverr, codeur.com) · ouvert aux opportunités
+- **Email** : mathiaszangafigue@gmail.com
 - **GitHub** : https://github.com/Zangafigue
 - **X / Twitter** : https://x.com/Zanga286
 
 ## 2. Positionnement / marque
 
-- **Une phrase** : développeur **full-stack & mobile** qui transforme des idées en produits livrés — du SaaS web au jeu mobile éducatif — avec une sensibilité **produit/design** et un goût pour l'**IA** et la **cybersécurité**.
+- **Une phrase** : développeur **web & mobile** qui transforme des idées en produits livrés — du SaaS web au jeu mobile éducatif — avec une sensibilité **produit/design** et un goût pour l'**IA** et la **cybersécurité**.
 - **Tagline perso** : *« Learn by building. Ship imperfect things. Improve every day. »*
 - **Différenciateurs** : breadth réelle (web + mobile + backend + IA), **~14 projets en ~1 an**, **3 hackathons**, intégration concrète de **LLM** (Gemini, Groq/Llama, MCP), et un profil **Burkina Faso / BIT** (contexte à valoriser, pas à cacher).
 
-## 3. Compétences
+## 3. Expérience récente
+
+### WoeLab / HubCity Africa — Stage développeur web & mobile
+
+- **Lomé, Togo · août–septembre 2026 · via AIESEC Global Talent**
+- Contribution au projet **SCoPE** : audit et documentation de trois codebases existantes (Flutter web, Flutter mobile et backend NestJS).
+- Travail sur le dashboard d’administration, la consolidation du flux principal du MVP, les tests, les branches Git et la passation technique.
+- Les éléments de code et de données internes ne sont pas reproduits ici ; la présentation publique reste limitée aux contributions vérifiables.
+
+## 4. Compétences
 
 | Domaine | Technologies | Niveau |
 | --- | --- | --- |
@@ -39,7 +48,7 @@
 | Soft skills | Adaptabilité, esprit entrepreneurial, travail en équipe & en autonomie | — |
 | Langues | Français (natif/bilingue), Dioula (natif/bilingue), Anglais (intermédiaire) | — |
 
-## 4. Projets (à mettre en vitrine)
+## 5. Projets (à mettre en vitrine)
 
 > Ordre de priorité conseillé pour le portfolio. Chacun a un repo public.
 

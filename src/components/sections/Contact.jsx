@@ -84,7 +84,7 @@ function Contact() {
   })
 
   const contactLinks = [
-    { label: t('contact.linkEmail'),   value: 'mathiastraore08@gmail.com',  href: 'mailto:mathiastraore08@gmail.com' },
+    { label: t('contact.linkEmail'),   value: 'mathiaszangafigue@gmail.com',  href: 'mailto:mathiaszangafigue@gmail.com' },
     { label: t('contact.linkGithub'),  value: 'github.com/Zangafigue',      href: 'https://github.com/Zangafigue' },
     { label: t('contact.linkCodeur'),  value: 'codeur.com/-zangafiguem',    href: 'https://www.codeur.com/-zangafiguem' },
     { label: t('contact.linkFiverr'),  value: t('contact.viewProfile'),     href: 'https://www.fiverr.com/s/kL9KL8N' },

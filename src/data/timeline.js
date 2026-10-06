@@ -82,11 +82,21 @@ const timeline = [
   },
   {
     id: 9,
+    year: { en: "Aug – Sep 2026", fr: "Août – Sept. 2026" },
+    title: { en: "Web & Mobile Developer Intern — WoeLab", fr: "Stage développeur web & mobile — WoeLab" },
+    description: {
+      en: "At HubCity in Lomé, audited and documented existing SCoPE codebases, contributed to the Admin dashboard and MVP consolidation, and prepared technical handoff.",
+      fr: "À HubCity à Lomé, audit et documentation de l'existant SCoPE, contribution au dashboard Admin et à la consolidation du MVP, puis préparation de la passation technique.",
+    },
+    type: "achievement",
+  },
+  {
+    id: 10,
     year: { en: "2026", fr: "2026" },
     title: { en: "Freelance & product work", fr: "Freelance & développement produit" },
     description: {
-      en: "Building products as a freelancer and deepening my full-stack profile — web, mobile, backend and AI.",
-      fr: "Je développe des produits en freelance et j'approfondis mon profil full-stack — web, mobile, backend et IA.",
+      en: "Building products as a freelancer and deepening my web and mobile profile across backend and AI integrations.",
+      fr: "Je développe des produits en freelance et j'approfondis mon profil web et mobile, avec du backend et des intégrations IA.",
     },
     type: "project",
     current: true,
